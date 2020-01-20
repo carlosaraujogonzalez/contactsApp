@@ -1,23 +1,12 @@
 package com.sinbugs.contacts.api;
 
-import java.io.Serializable;
+public class ContactResponse {
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-
-@Entity
-public class ContactResponse implements Serializable {
-
-	private static final long serialVersionUID = 4894729030347835498L;
-
-	@Id
-	@GeneratedValue
-	Long id;
-	String firstName;
-	String lastName;
-	String phoneNumber;
-	String email;
+	private Long id;
+	private String firstName;
+	private String lastName;
+	private String phoneNumber;
+	private String email;
 
 	public ContactResponse(Long id, String firstName, String lastName, String phoneNumber, String email) {
 		super();
@@ -26,12 +15,6 @@ public class ContactResponse implements Serializable {
 		this.lastName = lastName;
 		this.phoneNumber = phoneNumber;
 		this.email = email;
-	}
-
-	@Override
-	public String toString() {
-		return "Contact [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", phoneNumber="
-				+ phoneNumber + ", email=" + email + "]";
 	}
 
 	public Long getId() {
