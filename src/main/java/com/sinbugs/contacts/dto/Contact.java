@@ -13,12 +13,16 @@ public class Contact implements Serializable {
 
 	@Id
 	@GeneratedValue
-	Long id;
-	String firstName;
-	String lastName;
-	String phoneNumber;
-	String email;
+	private Long id;
+	private String firstName;
+	private String lastName;
+	private String phoneNumber;
+	private String email;
 
+	public Contact() {
+		
+	}
+	
 	public Contact(Long id, String firstName, String lastName, String phoneNumber, String email) {
 		super();
 		this.id = id;

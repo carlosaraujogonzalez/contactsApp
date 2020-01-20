@@ -1,4 +1,4 @@
-package com.sinbugs.contacts.service;
+package com.sinbugs.contacts.config;
 
 import org.dozer.DozerBeanMapper;
 import org.dozer.Mapper;

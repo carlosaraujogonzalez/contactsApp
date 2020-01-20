@@ -20,7 +20,7 @@ public class ContactsApi {
 	@Autowired
 	Mapper mapper;
 	
-	@RequestMapping(value = "/product", method = RequestMethod.GET)
+	@RequestMapping(value = "/contact", method = RequestMethod.GET)
 	public ContactResponse getById() {
 		return new ContactResponse(1L, "Araújo", "González", "607716786", "carlosaraujogonzalez@gmail.com");
 	}

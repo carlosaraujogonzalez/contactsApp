@@ -7,7 +7,11 @@ public class ContactResponse {
 	private String lastName;
 	private String phoneNumber;
 	private String email;
-
+    
+	public ContactResponse() {
+		
+	}
+	
 	public ContactResponse(Long id, String firstName, String lastName, String phoneNumber, String email) {
 		super();
 		this.id = id;
